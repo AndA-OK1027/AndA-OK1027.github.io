@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('blocks/head.html')
+    <head>
+        @@include('blocks/head.html')
+    </head>
 	<body class="body">
 		@@include('blocks/page-header.html')
     	<main class="main">
@@ -118,8 +120,37 @@
                                 <use xlink:href="assets/icons/symbols.svg#map"></use>
                             </svg>
                         </div>
-                        <div class="reserve__order">1</div>
-                        <div class="reserve__legend">1</div>
+                        <div class="reserve__order">
+                            <h5 class="reserve__order-title">
+                                Ваши пригласительные билеты
+                            </h5>
+                            <div>
+                                <span>
+                                    9 шт. | 1400
+                                </span>
+                                <span>
+                                    12 600
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    4 шт. | 1250
+                                </span>
+                                <span>
+                                    5000
+                                </span>
+                            </div>
+                            <div>
+                                Сумма   17 500
+                            </div>
+                            <a href="#" class="title__btn--red btn">Купить билеты</a>
+                        </div>
+                        <div class="reserve__legend">
+                            <h5 class="reserve__legend-title">
+                                Стоимость пригласительного билета
+                            </h5>
+                            
+                        </div>
                     </form>
                 </div>
             </article>

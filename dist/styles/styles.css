@@ -1359,6 +1359,7 @@ textarea:focus::placeholder {
 }
 .reserve__legend {
   grid-area: "legend";
+  justify-self: right;
 }
 .events__listing {
   -webkit-box-sizing: border-box;
