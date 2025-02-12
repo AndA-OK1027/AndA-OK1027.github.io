@@ -1,0 +1,28 @@
+.blog {
+    .container;
+
+    &__section-title {
+        .section-title;
+        margin-bottom: 150px;
+        margin-top: 200px;
+    }
+
+    &__article-list {
+        margin-bottom: 70px;
+        @media @bw500 {
+            margin-bottom: 60px;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: @black;
+        float: right;
+        margin-top: 50px;
+        &:hover {
+            color: @red;
+        }
+        @media @bw500 {
+            margin-top: 30px;
+        }
+    }
+}

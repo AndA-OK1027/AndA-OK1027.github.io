@@ -15,7 +15,7 @@
   <header class="page-header">
     <div class="page-header__container">
       <a href="index.html" aria-label="Logo" class="page-header__logo">
-        <svg class="page-header__logo-icon" width="202" height="147">
+        <svg class="page-header__logo-icon" width="202" height="147" viewBox="0 0 202 147" fill="none">
           <use xlink:href="assets/icons/symbols.svg#logo"></use>
         </svg>
       </a>
@@ -24,51 +24,54 @@
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            Александр С.
+          </a>
 
-        <a href="#" class="page-header__nav-user-link">
-          Александр С.
-          <svg class="page-header__user-icon" width="24" height="24">
-            <use xlink:href="assets/icons/symbols.svg#door"></use>
-          </svg>
-        </a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__user-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
       <div class="page-header__right-block">
-        <a href="#" class="page-header__user-btn btn">Войти</a>
-        <svg class="page-header__user-icon" width="21" height="18">
-          <use xlink:href="assets/icons/symbols.svg#user"></use>
-        </svg>
+        <a href="#" class="page-header__user-btn btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
         <button type="button" aria-label="Toggle" class="page-header__nav-toggle" id="js-navToggle">
           <span class="page-header__nav-toggle-line"></span>
         </button>
       </div>
+
     </div>
   </header>
 
   <main class="main">
-    <div class="title__container">
-      <H1 class="title">арт — пространство</H1>
-      <div class="title__lenni">
-        <svg width="1920" height="325">
-          <use xlink:href="assets/icons/symbols.svg#LENNI"></use>
-        </svg>
-      </div>
-      <H2 class="title">
+    <div class="main-title">
+      <H1 class="main-title__title">арт — пространство</H1>
+      <img src="assets/images/LENNI.png" alt="logo" class="main-title__img">
+      <H2 class="main-title__quote">
         <br> для людей, горящих сердцем и делом
         <br /> место для настоящего
       </H2>
-      <div class="title__i-want-container">
-        <div class="title title--small">Я хочу:</div>
-        <div class="title__btn-container">
-          <a href="#" class="title__btn--red btn">Провести мероприятие</a>
-          <div class="title__empty-block"></div>
-          <a href="#" class="btn">Стать арендатором</a>
+      <div class="main-title__i-want-container">
+        <H3 class="main-title__btns-text"> Я хочу:</H3>
+        <div class="main-title__btn-container">
+          <button type="button" href="#" class="btn--red main-title__btn btn">Провести мероприятие</button>
+          <div class="main-title__empty-block"></div>
+          <a href="#" class="main-title__btn btn">Стать арендатором</a>
         </div>
       </div>
     </div>
 
     <div class="about">
       <div class="about__container">
-        <H2 class="header header__h2 about__header">О нас</H2>
+        <H2 class="about__header">О нас</H2>
         <div class="about__block1">
           <h3 class="about__subtitle">Проект «Millennials»</h3>
           <p class="about__text">
@@ -78,13 +81,13 @@
         </div>
         <div class="about__block2">
           <picture class="about__block2-picture1">
-            <img src="assets/images/pic.jpg" alt="about1" />
+            <img src="assets/images/about/sample1.jpg" alt="about1" />
           </picture>
           <h3 class="about__subtitle">
             Мы предоставляем площади для вашего мероприятия
           </h3>
           <picture class="about__block2-picture2">
-            <img src="assets/images/pic(1).jpg" alt="about2" />
+            <img src="assets/images/about/sample2.jpg" alt="about2" />
           </picture>
 
           <p class="about__text">
@@ -96,7 +99,7 @@
         </div>
         <div class="about__block3">
           <picture class="about__block3-picture">
-            <img src="assets/images/pic(2).jpg" alt="about3" class="about__block3-img" />
+            <img src="assets/images/about/sample3.jpg" alt="about3" class="about__block3-img" />
           </picture>
           <div class="about__block3-text">Мы уже успешно организовали и
             <br> провели более 100 проектов.
@@ -170,6 +173,82 @@
       </div>
     </div>
 
+
+    <section class="blog @@class">
+      <H2 class="blog__section-title section-title">Блог</H2>
+      <div class="blog__article-list">
+        <article class="article-card listing__article-card">
+          <a href="#" class="article-card__link">
+            <picture class="article-card__picture">
+              <img src="assets/images/blog/Theatre.jpg" alt="Theatre Photosession" class="article-card__img" />
+            </picture>
+          </a>
+
+          <div class="article-card__info">
+            <time datetime="2022-11-26T00:00" , class="article-card__time">26.11.2022</time>
+            <a href="#" class="article-card__title-link">
+              <h4 class="article-card__title">Фотосессия в стенах Театра драмы</h4>
+
+              <div class="article-card__arrow arrow">
+                <svg class="arrow__icon" width="92" height="62">
+                  <use xlink:href="assets/icons/arrow.svg#arrow"></use>
+                </svg>
+              </div>
+            </a>
+
+            <p class="article-card__description">Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было</p>
+          </div>
+
+        </article>
+        <article class="article-card listing__article-card">
+          <a href="#" class="article-card__link">
+            <picture class="article-card__picture">
+              <img src="assets/images/blog/VR.jpg" alt="VR showcase" class="article-card__img" />
+            </picture>
+          </a>
+
+          <div class="article-card__info">
+            <time datetime="2022-11-05T00:00" , class="article-card__time">05.11.2022</time>
+            <a href="#" class="article-card__title-link">
+              <h4 class="article-card__title">Выставка VR в Томске</h4>
+
+              <div class="article-card__arrow arrow">
+                <svg class="arrow__icon" width="92" height="62">
+                  <use xlink:href="assets/icons/arrow.svg#arrow"></use>
+                </svg>
+              </div>
+            </a>
+
+            <p class="article-card__description">Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.</p>
+          </div>
+
+        </article>
+        <article class="article-card listing__article-card">
+          <a href="#" class="article-card__link">
+            <picture class="article-card__picture">
+              <img src="assets/images/blog/RockingRadio.jpg" alt="RockingRadio" class="article-card__img" />
+            </picture>
+          </a>
+
+          <div class="article-card__info">
+            <time datetime="2022-11-01T00:00" , class="article-card__time">01.11.2022</time>
+            <a href="#" class="article-card__title-link">
+              <h4 class="article-card__title">Rocking radio в заброшенном ангаре</h4>
+
+              <div class="article-card__arrow arrow">
+                <svg class="arrow__icon" width="92" height="62">
+                  <use xlink:href="assets/icons/arrow.svg#arrow"></use>
+                </svg>
+              </div>
+            </a>
+
+            <p class="article-card__description">15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.</p>
+          </div>
+
+        </article>
+      </div>
+      <a href="#" class="blog__link">Смотреть все</a>
+    </section>
 
   </main>
   <footer class="page-footer">
