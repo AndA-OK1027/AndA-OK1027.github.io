@@ -69,9 +69,18 @@
                 }
               ])
             </div>
+              <a href="#" class="listing events__link">
+                <div class="listing events__link-text">
+                  Показать еще
+                </div>
+                <svg class="listing events__link-arrow" width="91" height="60" transform="rotate(90)">
+                  <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                </svg>
+              </a>
           </section>
         </div>
-        @@include('blocks/table.html', {"class": "events-tariffs-table"})
+
+        @@include('blocks/tariffs-table.html', {"class": "events-tariffs-table"})
 		  </main>
       @@include('blocks/page-footer.html')
       <!-- @@include('blocks/event-pp.html') -->
