@@ -11,7 +11,6 @@
         margin-top: 140px;
         display: flex;
         margin-bottom: 60px;
-        gap: 100px;
         @media @bw1660 {
             gap: 90px;
         }
@@ -26,21 +25,21 @@
             height: 2px;
         }
         &::before {
+            margin-right: 50px;
             background: linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 82.86%);
-
-
         }
         &::after {
+            margin-left: 50px;
             background: linear-gradient(90deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 100%);
         }
     }
-    &__block1 {
+    &__block {
         display: flex;
         gap: 50px;
         justify-content: space-between;
         margin-bottom: 60px;
     }
-    &__block1-links {
+    &__block-links {
         position: relative;
         padding-left: 26px;
         display: flex;
@@ -56,7 +55,7 @@
             background-color: @red;
         }
     }
-    &__block1-link {
+    &__block-link {
         text-decoration: none;
         font-size: 16px;
         line-height: 1.3;

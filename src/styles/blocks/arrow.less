@@ -1,0 +1,22 @@
+.arrow {
+    font-size: 0px;
+      margin-left: 20px;
+      margin-right: 20px;
+      border: none;
+      background-color: transparent;
+      transition: currentColor 0.2s, color 0.2s;
+      &:hover {
+        cursor: pointer;
+        currentcolor: @red;
+        color: @red;
+      }
+      &--left {
+        transform: scaleX(-1);
+      }
+      @media @bw768 {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+}
